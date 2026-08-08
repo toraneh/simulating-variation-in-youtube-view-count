@@ -1,60 +1,65 @@
-# YouTube View Count Simulation
+# Simulating Variation in YouTube View Counts
+
+A small reproducible simulation study illustrating variation around an observed YouTube video view count using a Poisson model.
 
 ## Overview
 
-This repository contains the R code and figure used for a short simulation study of a YouTube video view count.
+This project examines variation around an observed YouTube view count of **3,306 views** for the video:
 
-The video had **3,306 views at 3:27 on August 8, 2026**, when the observation and simulation were conducted. A Poisson model was used to simulate variation around this observed count.
+*RS | Monsoon Session 2026 | Question Hour | Time: 12:00 PM -12:04 PM | 07 August, 2026*
+
+The analysis uses a Poisson distribution as a simple exploratory baseline. It is intended as a descriptive simulation rather than a prediction of future views.
 
 ## Simulation
 
-The analysis was conducted in **R 4.5.0**.
+The simulation was conducted in **R 4.5.0** using:
 
-The simulation:
+* **10,000** simulated observations
+* Poisson mean (`lambda`) = **3,306**
+* Random seed = **123**
 
-* Uses an observed view count of 3,306
-* Generates 10,000 Poisson-distributed observations
-* Uses random seed `123` for reproducibility
-* Calculates the mean, standard deviation, minimum, maximum, and central 95% range
-* Produces a histogram of the simulated values
-* Marks the observed value of 3,306 with a red vertical line
+The simulation calculates the mean, standard deviation, minimum, maximum, and empirical 95% simulation interval.
 
-The resulting simulated mean was **3,304.636**, with a standard deviation of **57.003**. The simulated values ranged from **3,086 to 3,527**, while the central 95% range was **3,192–3,416**.
+## Results
 
-## Files
+The simulation produced:
 
-* `simulation.R` — R script used for the simulation
-* `figure1.png` — histogram of the simulated view counts
-* `simulation.md` — short research paper
+| Statistic              |      Result |
+| ---------------------- | ----------: |
+| Observed views         |       3,306 |
+| Simulated mean         |   3,304.636 |
+| Standard deviation     |      57.003 |
+| Minimum                |       3,086 |
+| Maximum                |       3,527 |
+| Empirical 95% interval | 3,192–3,416 |
 
-## Reproduction
+The results are descriptive and should not be interpreted as evidence that YouTube view counts generally follow a Poisson distribution.
 
-With R installed, run:
+## Repository Contents
 
-```r
-source("simulation.R")
-```
+* `youtube_view_count_simulation.pdf` — PDF version of the paper
+* `youtube_view_count_simulation.md` — Markdown source
+* `youtube_view_count_simulation.R` — R code used for the simulation and figure
+* `figure_1_view_count_distribution.png` — Figure 1
 
-The script uses only base R functions and does not require additional packages.
+## Reproducibility
+
+To reproduce the analysis, open `youtube_view_count_simulation.R` in R 4.5.0 or a compatible version of R and run the script. The script uses random seed `123` to ensure reproducibility.
 
 ## Data Source
 
-The observed count was taken from the following YouTube video:
+The observed count comes from the following YouTube video:
 
-**Title:** *RS | Monsoon Session 2026 | Question Hour | Time: 12:00 PM -12:04 PM | 07 August, 2026*  
-**Observed count:** 3,306 views  
-**Observation date:** August 8, 2026  
-**Observation time:** 3:27
+*RS | Monsoon Session 2026 | Question Hour | Time: 12:00 PM -12:04 PM | 07 August, 2026*
 
-https://www.youtube.com/watch?v=mfZ5GKz2yjY
+YouTube, 2026.
 
-The view count is time-dependent and may have changed after the observation was recorded.
-## Limitations
+## Citation
 
-This is a simple simulation based on a single observed video. The Poisson distribution is assumed rather than empirically validated against longitudinal or multi-video viewing data.
+If you use this material, please cite the associated paper:
 
-Therefore, the simulation should be interpreted as a demonstration of variation under the specified model, **not as evidence that YouTube views generally follow a Poisson distribution or as a prediction of future views**.
+> *Simulating Variation in YouTube View Counts*.
 
 ## License
 
-The code may be reused for educational and research purposes with appropriate attribution.
+Unless otherwise specified, the accompanying code and materials are provided for research and educational use.
