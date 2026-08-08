@@ -1,6 +1,6 @@
 ---
 title: "Simulating Variation in YouTube View Counts: A Civic-Data Simulation Using Sansad TV"
-author: ""
+author: "Harsh Torane"
 date: ""
 header-includes:
   - \usepackage{graphicx}
