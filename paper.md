@@ -51,6 +51,4 @@ YouTube. (2026). *RS | Monsoon Session 2026 | Question Hour | Time: 12:00 PM -12
 
 ## Code Availability
 
-The R code used to generate the simulation and Figure 1 is available in the accompanying repository:
-
-https://github.com/toraneh/youtube-view-simulation
+The R code used to generate the simulation and Figure 1 is available in the accompanying [GitHub repository](https://github.com/toraneh/simulating-variation-in-youtube-view-count).
