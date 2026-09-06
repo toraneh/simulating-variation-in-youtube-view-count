@@ -70,7 +70,7 @@ YouTube (2026).
 
 If you use this work or data in your research, please cite it as:
 
-> Torane, H. “Simulating Variation in YouTube View Counts: A Civic-Data Simulation Using Sansad TV”. Preprint, Zenodo, September 6, 2026. https://doi.org/10.5281/zenodo.22507606.
+> Torane, H. “Simulating Variation in YouTube View Counts: A Civic-Data Simulation Using Sansad TV”. Preprint, Zenodo, September 6, 2026. https://doi.org/10.5281/zenodo.22234219
 
 ## License
 
