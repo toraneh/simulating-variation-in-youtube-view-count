@@ -1,9 +1,0 @@
-"statistic","value"
-"observed_views",3306
-"n_simulations",10000
-"simulated_mean",3304.636
-"simulated_sd",57.0032809705208
-"simulated_min",3086
-"simulated_max",3527
-"ci_2.5_percent",3192
-"ci_97.5_percent",3416
