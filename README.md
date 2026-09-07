@@ -50,7 +50,7 @@ The present study uses only one video and one observation. It therefore does not
 * `paper.pdf` — PDF version of the paper
 * `paper.md` — Markdown source
 * `youtube_view_count_simulation.R` — R code used for the simulation and Figure 1
-* `figure_1_view_count_distribution_v2.png` — Figure 1
+* `figure_1_view_count_distribution.png` — Figure 1
 
 ## Reproducibility
 
