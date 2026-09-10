@@ -54,7 +54,7 @@ The present study uses only one video and one observation. It therefore does not
 
 ## Reproducibility
 
-To reproduce the simulation, open `youtube_view_count_simulation.R` in **R 4.5.0** or a compatible version of R and run the script.
+To reproduce the simulation, open `analysis.R` in **R 4.5.0** or a compatible version of R and run the script.
 
 The simulation uses random seed `123` to ensure reproducibility.
 
