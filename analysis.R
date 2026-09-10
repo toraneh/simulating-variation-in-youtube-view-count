@@ -102,7 +102,7 @@ write.csv(
 
 
 # ------------------------------------------------------------
-# 5. Figure: high-resolution PNG (300)
+# 5. Figure: high-resolution PNG (300 dpi; dots per inch)
 # ------------------------------------------------------------
 
 figure_png <- file.path(
