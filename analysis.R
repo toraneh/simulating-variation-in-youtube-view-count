@@ -102,7 +102,7 @@ write.csv(
 
 
 # ------------------------------------------------------------
-# 5. Figure: high-resolution PNG (300 dpi; dots per inch)
+# 5. Figure: high-resolution PNG (600 dpi; dots per inch)
 # ------------------------------------------------------------
 
 figure_png <- file.path(
@@ -112,7 +112,7 @@ figure_png <- file.path(
 
 png(
   figure_png,
-  width = 8, height = 5.5, units = "in", res = 300
+  width = 8, height = 5.5, units = "in", res = 600
 )
 
 par(
