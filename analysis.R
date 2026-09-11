@@ -141,7 +141,11 @@ hist(
 # Custom x-axis with thousands separators (e.g. "3,300"), which
 # reads more clearly than bare "3300" for a view-count figure.
 x_ticks <- seq(3100, 3500, by = 100)
-axis(1, at = x_ticks, labels = format(x_ticks, big.mark = ",", scientific = FALSE))
+axis(
+  1,
+  at = x_ticks,
+  labels = format(x_ticks, big.mark = ",", scientific = FALSE)
+)
 
 # Light gridlines drawn first, then bars redrawn on top so the
 # gridlines sit behind (not over) the histogram bars.
