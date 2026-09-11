@@ -132,13 +132,20 @@ hist(
   col = "#ADD8E6",
   border = "white",
   xlim = c(3050, 3550),
-  ylim = c(0, 750),
+  ylim = c(0, 800),
+  yaxp = c(0, 800, 4),
+  xaxt = "n",
   las = 1
 )
 
+# Custom x-axis with thousands separators (e.g. "3,300"), which
+# reads more clearly than bare "3300" for a view-count figure.
+x_ticks <- seq(3100, 3500, by = 100)
+axis(1, at = x_ticks, labels = format(x_ticks, big.mark = ",", scientific = FALSE))
+
 # Light gridlines drawn first, then bars redrawn on top so the
 # gridlines sit behind (not over) the histogram bars.
-abline(h = seq(0, 700, by = 100), col = "gray90", lty = 1, lwd = 0.5)
+abline(h = seq(0, 800, by = 100), col = "gray90", lty = 1, lwd = 0.5)
 
 hist(
   simulated_views,
