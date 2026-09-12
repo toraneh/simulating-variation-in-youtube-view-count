@@ -33,7 +33,7 @@ The simulated mean was **3,304.6 views**, with a standard deviation of **57.0 vi
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth]{Figure_1_view_count_distribution.png}
+\includegraphics[width=\textwidth]{Figure_1.png}
 \caption{Distribution of 10,000 simulated YouTube view counts under the Poisson model. The red vertical line marks the observed count of 3,306 views, and the dashed gray line marks the simulated mean.}
 \end{figure}
 

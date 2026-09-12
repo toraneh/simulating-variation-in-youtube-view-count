@@ -107,7 +107,7 @@ write.csv(
 
 figure_png <- file.path(
   output_dir,
-  "Figure_1_view_count_distribution.png"
+  "Figure_1.png"
 )
 
 png(
@@ -197,7 +197,7 @@ dev.off()
 
 cat("Files written to: ", output_dir, "\n")
 cat(" - simulation_summary.csv\n")
-cat(" - Figure_1_view_count_distribution.png\n")
+cat(" - Figure_1.png\n")
 
 # ============================================================
 # END
