@@ -1,32 +1,33 @@
 # Simulating Variation in YouTube View Counts: A Civic-Data Simulation Using Sansad TV
 
-A small, reproducible simulation study exploring variation around an observed YouTube view count from Sansad TV. The project uses a Poisson model as an exploratory baseline and demonstrates how publicly observable digital engagement metrics can be used for statistical exploration and civic-data literacy.
+A reproducible simulation study exploring variation around an observed YouTube view count from Sansad TV using a Poisson baseline model. This project demonstrates statistical reasoning with publicly observable engagement metrics from democratic institutions.
 
 ## Overview
 
-This project examines variation around an observed YouTube view count of **3,306 views** for the video:
+This study examines sampling variation around an observed YouTube view count of **3,306 views** for a Sansad TV parliamentary proceedings video:
 
-*RS | Monsoon Session 2026 | Question Hour | Time: 12:00 PM -12:04 PM | 07 August, 2026*
+*RS | Monsoon Session 2026 | Question Hour | Time: 12:00 PM–12:04 PM | 07 August, 2026*
 
-Sansad TV provides public access to parliamentary proceedings and related programming through digital platforms, including YouTube. Publicly visible engagement metrics such as view counts provide a simple starting point for computational exploration.
+Sansad TV provides public access to parliamentary proceedings and related programming through digital platforms, including YouTube. Publicly visible engagement metrics such as view counts offer opportunities for statistical literacy exercises and exploratory analysis of civic-media engagement patterns.
 
-The simulation is intended as a **descriptive proof-of-concept**, not as a prediction of future views or a measure of civic participation.
+This simulation serves as a **descriptive proof-of-concept** demonstrating how an observed public metric can be transformed into a reproducible statistical exercise. The analysis should not be interpreted as a prediction of future view counts or a definitive measure of civic participation.
 
-## Simulation
+## Methods
 
 The simulation was conducted in **R 4.5.0** using:
 
-* **10,000** simulated observations
-* Poisson mean (`lambda`) = **3,306**
-* Random seed = **123**
+* **Population model:** Poisson distribution
+* **Mean parameter (λ):** 3,306 (the observed count)
+* **Number of simulations:** 10,000
+* **Random seed:** 123 (for reproducibility)
 
-The simulation calculates the mean, standard deviation, minimum, maximum, and empirical 95% simulation interval.
+This approach provides a baseline estimate of sampling variation under a standard distributional assumption.
 
 ## Results
 
-The simulation produced:
+The simulation produced the following summary statistics:
 
-| Statistic              |      Result |
+| Statistic              |      Value |
 | ---------------------- | ----------: |
 | Observed views         |       3,306 |
 | Simulated mean         |   3,304.636 |
@@ -35,43 +36,45 @@ The simulation produced:
 | Maximum                |       3,527 |
 | Empirical 95% interval | 3,192–3,416 |
 
-The results are descriptive. They should not be interpreted as evidence that YouTube view counts generally follow a Poisson distribution.
+**Interpretation:** Under a Poisson model with λ = 3,306, we would expect approximately 95% of simulated counts to fall between 3,192 and 3,416 views. These results are descriptive and do not constitute evidence that YouTube view counts generally follow a Poisson distribution.
 
 ## Civic-Data Context
 
-The project explores a simple connection between **parliamentary media, publicly observable digital engagement, and reproducible statistical reasoning**.
+This project explores the intersection of **parliamentary media accessibility, quantifiable digital engagement, and reproducible statistical reasoning**. Democratic institutions increasingly operate through digital channels, producing publicly observable metrics. This work demonstrates how such data can be leveraged for statistical education and public engagement with institutional behavior.
 
-The simulation demonstrates how an observed public metric can be transformed into an accessible statistical exercise. This approach may have applications in civic-data literacy, allowing citizens, students, educators, and researchers to explore concepts such as distributions, variation, uncertainty, and reproducibility using real-world public data.
-
-The present study uses only one video and one observation. It therefore does not establish general patterns of audience engagement with Sansad TV or parliamentary content. Future research could extend the framework to multiple videos, longitudinal observations, different parliamentary sessions, and alternative statistical models.
+The analytical approach may have applications in civic-data literacy initiatives, enabling citizens and researchers to engage critically with publicly available institutional metrics. However, the present analysis is limited to a single video and single observation, and therefore does not establish general patterns of audience engagement with parliamentary content.
 
 ## Repository Contents
 
-* `paper.pdf` — PDF version of the paper
-* `paper.md` — Markdown source
-* `analysis.R` — R code used for the simulation and Figure 1
-* `Figure_1.png` — Figure 1
+* `analysis.R` — R code for simulation and visualizations
+* `paper.pdf` — PDF version of the full analysis
+* `paper.md` — Markdown source of the analysis
+* `Figure_1.png` — Visualization of simulation results
 
 ## Reproducibility
 
-To reproduce the simulation, open `analysis.R` in **R 4.5.0** or a compatible version of R and run the script.
+To reproduce this analysis:
 
-The simulation uses random seed `123` to ensure reproducibility.
+1. Ensure R 4.5.0 or a compatible version is installed
+2. Open `analysis.R` in R
+3. Execute the script
 
-## Data Source
+The random seed is set to `123`, ensuring exact reproducibility of results.
 
-The observed count comes from the following YouTube video:
+## Data Availability
 
-*RS | Monsoon Session 2026 | Question Hour | Time: 12:00 PM -12:04 PM | 07 August, 2026*
+The observed count is derived from the following publicly accessible source:
 
-YouTube (2026).
+**YouTube video:** *RS | Monsoon Session 2026 | Question Hour | Time: 12:00 PM–12:04 PM | 07 August, 2026* (Sansad TV)
+
+Access date: 11 September 2026
 
 ## Citation
 
-If you use this work or data in your research, please cite it as:
+Please cite this work as:
 
-> Torane, H. “Simulating Variation in YouTube View Counts: A Civic-Data Simulation Using Sansad TV”. Preprint, Zenodo, September 11, 2026. https://doi.org/10.5281/zenodo.22234219
+> Torane, H. (2026). Simulating Variation in YouTube View Counts: A Civic-Data Simulation Using Sansad TV. *Preprint.* Zenodo. https://doi.org/10.5281/zenodo.22234219
 
 ## License
 
-Unless otherwise specified, the accompanying code and materials are provided for research and educational use.
+Code and materials are provided for research and educational use under the terms specified in the LICENSE file.
