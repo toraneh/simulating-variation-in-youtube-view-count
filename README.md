@@ -36,7 +36,7 @@ Access date: 11 September 2026
 
 ## Context and Applications
 
-This project explores the intersection of parliamentary media accessibility, quantifiable digital engagement, and reproducible statistical reasoning. Sansad TV provides public access to parliamentary proceedings, and engagement metrics offer opportunities for civic-data literacy initiatives. The analytical approach demonstrates how citizens and researchers can engage critically with publicly available institutional metrics, though findings remain descriptive and context-specific.
+This project explores the intersection of parliamentary media accessibility, quantifiable digital engagement, and reproducible statistical reasoning. Sansad TV provides public access to parliamentary proceedings, and engagement metrics offer opportunities for civic-data literacy initiatives. The analytical approach demonstrates how citizens and researchers can engage critically with publicly available institutional metrics, though findings remain limited in scope.
 
 ## Repository Contents
 
