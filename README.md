@@ -32,11 +32,10 @@ Under a Poisson model with λ = 3,306, approximately 95% of simulated counts fal
 
 **YouTube video:** *RS | Monsoon Session 2026 | Question Hour | Time: 12:00 PM–12:04 PM | 07 August, 2026* (Sansad TV)
 
-Access date: 11 September 2026
 
 ## Context and applications
 
-This project examines the intersection of parliamentary media accessibility, measurable digital engagement, and reproducible statistical reasoning. Sansad TV provides public access to parliamentary proceedings; this analysis illustrates how civic-media viewership data can support simulation-based research in a reproducible workflow.
+This project examines the intersection of parliamentary media accessibility, measurable digital engagement, and reproducible statistical reasoning.
 
 ## Repository contents
 
